@@ -9,11 +9,39 @@
                     "@id": "https://orcid.org/0000-0001-7956-4498"
                 }
             ],
-            "datePublished": "2023-10-12",
-            "description": "Tools and examples to work with digitised government publications available through Trove.",
-            "name": "Trove Government Publications",
-            "url": "https://github.com/GLAM-Workbench/trove-government",
-            "version": "0.0.0"
+            "datePublished": "2024-02-25T06:04:27+00:00",
+            "description": "A GLAM Workbench repository",
+            "hasPart": [
+                {
+                    "@id": "harvest-parliament-press-releases.ipynb"
+                },
+                {
+                    "@id": "https://github.com/GLAM-Workbench/trove-parliament-press-releases-refugees/tree/main/text/"
+                },
+                {
+                    "@id": "https://github.com/GLAM-Workbench/trove-parliament-press-releases-refugees/raw/main/results.csv"
+                },
+                {
+                    "@id": "https://github.com/GLAM-Workbench/trove-parliament-press-releases-covid/tree/main/text/"
+                },
+                {
+                    "@id": "https://github.com/GLAM-Workbench/trove-parliament-press-releases-covid/raw/main/results.csv"
+                },
+                {
+                    "@id": "harvest-parliamentary-papers.ipynb"
+                },
+                {
+                    "@id": "https://github.com/GLAM-Workbench/trove-parliamentary-papers-data/raw/main/trove-parliamentary-papers.csv"
+                }
+            ],
+            "license": {
+                "@id": "https://spdx.org/licenses/MIT"
+            },
+            "mainEntityOfPage": {
+                "@id": "https://glam-workbench.net/trove-government"
+            },
+            "name": "trove-government",
+            "url": "https://github.com/GLAM-Workbench/trove-government/"
         },
         {
             "@id": "ro-crate-metadata.json",
@@ -23,12 +51,283 @@
             },
             "conformsTo": {
                 "@id": "https://w3id.org/ro/crate/1.1"
+            },
+            "license": {
+                "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
             }
+        },
+        {
+            "@id": "https://glam-workbench.net/trove-government",
+            "@type": "CreativeWork",
+            "isPartOf": {
+                "@id": "https://glam-workbench.net/"
+            },
+            "name": "Trove government",
+            "url": "https://glam-workbench.net/trove-government"
+        },
+        {
+            "@id": "https://glam-workbench.net/",
+            "@type": "CreativeWork",
+            "author": [
+                {
+                    "@id": "https://orcid.org/0000-0001-7956-4498"
+                }
+            ],
+            "description": "A collection of tools, tutorials, examples, and hacks to help researchers work with data from galleries, libraries, archives, and museums (the GLAM sector).",
+            "name": "GLAM Workbench",
+            "url": "https://glam-workbench.net/"
         },
         {
             "@id": "https://orcid.org/0000-0001-7956-4498",
             "@type": "Person",
-            "name": "Sherratt, Tim"
+            "mainEntityOfPage": "https://timsherratt.au",
+            "name": "Sherratt, Tim",
+            "orcid": "https://orcid.org/0000-0001-7956-4498"
+        },
+        {
+            "@id": "https://spdx.org/licenses/MIT",
+            "@type": "CreativeWork",
+            "name": "MIT License",
+            "url": "https://spdx.org/licenses/MIT.html"
+        },
+        {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/",
+            "@type": "CreativeWork",
+            "name": "CC0 Public Domain Dedication",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+        },
+        {
+            "@id": "http://rightsstatements.org/vocab/NKC/1.0/",
+            "@type": "CreativeWork",
+            "description": "The organization that has made the Item available reasonably believes that the Item is not restricted by copyright or related rights, but a conclusive determination could not be made.",
+            "name": "No Known Copyright",
+            "url": "http://rightsstatements.org/vocab/NKC/1.0/"
+        },
+        {
+            "@id": "http://rightsstatements.org/vocab/CNE/1.0/",
+            "@type": "CreativeWork",
+            "description": "The copyright and related rights status of this Item has not been evaluated.",
+            "name": "Copyright Not Evaluated",
+            "url": "http://rightsstatements.org/vocab/CNE/1.0/"
+        },
+        {
+            "@id": "https://www.python.org/downloads/release/python-31012/",
+            "@type": [
+                "ComputerLanguage",
+                "SoftwareApplication"
+            ],
+            "name": "Python 3.10.12",
+            "url": "https://www.python.org/downloads/release/python-31012/",
+            "version": "3.10.12"
+        },
+        {
+            "@id": "https://glam-workbench.net/trove-government/harvest-parliament-press-releases/",
+            "@type": "CreativeWork",
+            "isPartOf": {
+                "@id": "https://glam-workbench.net/trove-government"
+            },
+            "name": "Harvest parliament press releases from Trove",
+            "url": "https://glam-workbench.net/trove-government/harvest-parliament-press-releases/"
+        },
+        {
+            "@id": "harvest-parliament-press-releases.ipynb",
+            "@type": [
+                "File",
+                "SoftwareSourceCode"
+            ],
+            "author": [
+                {
+                    "@id": "https://orcid.org/0000-0001-7956-4498"
+                }
+            ],
+            "codeRepository": "https://github.com/GLAM-Workbench/trove-government/",
+            "conformsTo": {
+                "@id": "https://purl.archive.org/textcommons/profile#Notebook"
+            },
+            "description": "Trove includes more than 380,000 press releases, speeches, and interview transcripts issued by Australian federal politicians and saved by the Parliamentary Library. This notebook shows you how to harvest both metadata and full text from a search of the parliamentary press releases. The metadata is available from Trove, but to get the full text we have to go back to the Parliamentary Library's database, ParlInfo.",
+            "documentation": {
+                "@id": "https://glam-workbench.net/trove-government/harvest-parliament-press-releases/"
+            },
+            "encodingFormat": "application/x-ipynb+json",
+            "name": "Harvest parliament press releases from Trove",
+            "programmingLanguage": {
+                "@id": "https://www.python.org/downloads/release/python-31012/"
+            },
+            "url": "https://github.com/GLAM-Workbench/trove-government/blob/master/harvest-parliament-press-releases.ipynb"
+        },
+        {
+            "@id": "https://glam-workbench.net/trove-government/trove-parliament-press-releases-refugees",
+            "@type": "CreativeWork",
+            "isPartOf": {
+                "@id": "https://glam-workbench.net/trove-government"
+            },
+            "name": "Press releases relating to refugees",
+            "url": "https://glam-workbench.net/trove-government/trove-parliament-press-releases-refugees"
+        },
+        {
+            "@id": "https://github.com/GLAM-Workbench/trove-parliament-press-releases-refugees/tree/main/text/",
+            "@type": "File",
+            "dateModified": "2024-02-23",
+            "documentation": {
+                "@id": "https://glam-workbench.net/trove-government/trove-parliament-press-releases-refugees"
+            },
+            "name": "text",
+            "sdDatePublished": "2024-02-25",
+            "url": "https://github.com/GLAM-Workbench/trove-parliament-press-releases-refugees/tree/main/text/"
+        },
+        {
+            "@id": "https://github.com/GLAM-Workbench/trove-parliament-press-releases-refugees/raw/main/results.csv",
+            "@type": "File",
+            "contentSize": 12948858,
+            "dateModified": "2024-02-20",
+            "documentation": {
+                "@id": "https://glam-workbench.net/trove-government/trove-parliament-press-releases-refugees"
+            },
+            "encodingFormat": "text/csv",
+            "name": "results.csv",
+            "sdDatePublished": "2024-02-25",
+            "url": "https://github.com/GLAM-Workbench/trove-parliament-press-releases-refugees/raw/main/results.csv"
+        },
+        {
+            "@id": "#harvest-parliament-press-releases_run_0",
+            "@type": "CreateAction",
+            "actionStatus": {
+                "@id": "http://schema.org/CompletedActionStatus"
+            },
+            "endDate": "2024-02-23",
+            "instrument": {
+                "@id": "harvest-parliament-press-releases.ipynb"
+            },
+            "name": "Run of notebook: harvest-parliament-press-releases.ipynb",
+            "query": "nuc:\"APAR:PR\" AND (\"illegal arrival\" OR text:\"immigrant\" OR text:\"immigrants\" OR \"asylum seeker\" OR \"boat people\" OR refugee OR \"boat arrivals\")",
+            "result": [
+                {
+                    "@id": "https://github.com/GLAM-Workbench/trove-parliament-press-releases-refugees/tree/main/text/"
+                },
+                {
+                    "@id": "https://github.com/GLAM-Workbench/trove-parliament-press-releases-refugees/raw/main/results.csv"
+                }
+            ]
+        },
+        {
+            "@id": "https://glam-workbench.net/trove-government/trove-parliament-press-releases-covid",
+            "@type": "CreativeWork",
+            "isPartOf": {
+                "@id": "https://glam-workbench.net/trove-government"
+            },
+            "name": "Press releases relating to COVID",
+            "url": "https://glam-workbench.net/trove-government/trove-parliament-press-releases-covid"
+        },
+        {
+            "@id": "https://github.com/GLAM-Workbench/trove-parliament-press-releases-covid/tree/main/text/",
+            "@type": "File",
+            "dateModified": "2024-02-25",
+            "documentation": {
+                "@id": "https://glam-workbench.net/trove-government/trove-parliament-press-releases-covid"
+            },
+            "name": "text",
+            "sdDatePublished": "2024-02-25",
+            "url": "https://github.com/GLAM-Workbench/trove-parliament-press-releases-covid/tree/main/text/"
+        },
+        {
+            "@id": "https://github.com/GLAM-Workbench/trove-parliament-press-releases-covid/raw/main/results.csv",
+            "@type": "File",
+            "contentSize": 5194797,
+            "dateModified": "2024-02-25",
+            "documentation": {
+                "@id": "https://glam-workbench.net/trove-government/trove-parliament-press-releases-covid"
+            },
+            "encodingFormat": "text/csv",
+            "name": "results.csv",
+            "sdDatePublished": "2024-02-25",
+            "url": "https://github.com/GLAM-Workbench/trove-parliament-press-releases-covid/raw/main/results.csv"
+        },
+        {
+            "@id": "#harvest-parliament-press-releases_run_1",
+            "@type": "CreateAction",
+            "actionStatus": {
+                "@id": "http://schema.org/CompletedActionStatus"
+            },
+            "endDate": "2024-02-25",
+            "instrument": {
+                "@id": "harvest-parliament-press-releases.ipynb"
+            },
+            "name": "Run of notebook: harvest-parliament-press-releases.ipynb",
+            "query": "nuc:\"APAR:PR\" AND (covid OR coronavirus)",
+            "result": [
+                {
+                    "@id": "https://github.com/GLAM-Workbench/trove-parliament-press-releases-covid/tree/main/text/"
+                },
+                {
+                    "@id": "https://github.com/GLAM-Workbench/trove-parliament-press-releases-covid/raw/main/results.csv"
+                }
+            ]
+        },
+        {
+            "@id": "harvest-parliamentary-papers.ipynb",
+            "@type": [
+                "File",
+                "SoftwareSourceCode"
+            ],
+            "author": [
+                {
+                    "@id": "https://orcid.org/0000-0001-7956-4498"
+                }
+            ],
+            "codeRepository": "https://github.com/GLAM-Workbench/trove-government/",
+            "conformsTo": {
+                "@id": "https://purl.archive.org/textcommons/profile#Notebook"
+            },
+            "description": "Trove includes thousands of digitised papers and reports presented to the Commonwealth Parliament. However, finding all the Parliamentary Papers is not straightforward because of inconsistencies in the way they've been arranged and described. This notebook attempts to work around these problems and harvest as complete as possible data about Parliamentary Papers in Trove.",
+            "documentation": {
+                "@id": "https://glam-workbench.net/trove-government/harvest-parliament-press-releases/"
+            },
+            "encodingFormat": "application/x-ipynb+json",
+            "name": "Harvest details of Commonwealth Parliamentary Papers digitised in Trove",
+            "programmingLanguage": {
+                "@id": "https://www.python.org/downloads/release/python-31012/"
+            },
+            "url": "https://github.com/GLAM-Workbench/trove-government/blob/master/harvest-parliamentary-papers.ipynb"
+        },
+        {
+            "@id": "https://glam-workbench.net/trove-government/trove-parliamentary-papers-data/",
+            "@type": "CreativeWork",
+            "isPartOf": {
+                "@id": "https://glam-workbench.net/trove-government"
+            },
+            "name": "Digitised Parliamentary Papers in Trove",
+            "url": "https://glam-workbench.net/trove-government/trove-parliamentary-papers-data/"
+        },
+        {
+            "@id": "https://github.com/GLAM-Workbench/trove-parliamentary-papers-data/raw/main/trove-parliamentary-papers.csv",
+            "@type": "File",
+            "contentSize": 30098918,
+            "dateModified": "2024-02-13",
+            "documentation": {
+                "@id": "https://glam-workbench.net/trove-government/trove-parliamentary-papers-data/"
+            },
+            "encodingFormat": "text/csv",
+            "name": "trove-parliamentary-papers.csv",
+            "sdDatePublished": "2024-02-25",
+            "size": 24996,
+            "url": "https://github.com/GLAM-Workbench/trove-parliamentary-papers-data/raw/main/trove-parliamentary-papers.csv"
+        },
+        {
+            "@id": "#harvest-parliamentary-papers_run_0",
+            "@type": "CreateAction",
+            "actionStatus": {
+                "@id": "http://schema.org/CompletedActionStatus"
+            },
+            "endDate": "2024-02-13",
+            "instrument": {
+                "@id": "harvest-parliamentary-papers.ipynb"
+            },
+            "name": "Run of notebook: harvest-parliamentary-papers.ipynb",
+            "result": [
+                {
+                    "@id": "https://github.com/GLAM-Workbench/trove-parliamentary-papers-data/raw/main/trove-parliamentary-papers.csv"
+                }
+            ]
         }
     ]
 }
