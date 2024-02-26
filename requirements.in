@@ -5,3 +5,10 @@ pandas
 requests
 altair
 jupyter-archive
+beautifulsoup4
+lxml
+tqdm
+requests_cache
+ipywidgets
+pyarrow
+python-slugify

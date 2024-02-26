@@ -10,7 +10,7 @@
                 }
             ],
             "datePublished": "2024-02-26T01:00:01+00:00",
-            "description": "A GLAM Workbench repository",
+            "description": "Resources generated or collected by the Australian Commonwealth Government are available in a number of different locations and formats across Trove. This repository contains tools and examples to work with digitised government publications available through Trove.",
             "hasPart": [
                 {
                     "@id": "harvest-parliament-press-releases.ipynb"
