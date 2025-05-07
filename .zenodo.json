@@ -1,42 +1,41 @@
 {
-    "language": "eng",
-    "license": "MIT",
-    "title": "GLAM-Workbench/trove-government",
-    "related_identifiers": [
-      {
-        "scheme": "url",
-        "identifier": "https://github.com/GLAM-Workbench/trove-government/tree/v0.0.0",
-        "relation": "isDerivedFrom",
-        "resource_type": "software"
-      },
-      {
-        "scheme": "url",
-        "identifier": "https://glam-workbench.net/trove-government-publications/",
-        "relation": "isDocumentedBy",
-        "resource_type": "publication-softwaredocumentation"
-      },
-      {
-        "scheme": "url",
-        "identifier": "https://glam-workbench.net/",
-        "relation": "isPartOf",
-        "resource_type": "other"
-      }
-    ],
-    "version": "v0.0.0",
-    "upload_type": "software",
-    "keywords": [
-      "digital humanities",
-      "Jupyter",
-      "GLAM Workbench"
-    ],
-    "publication_date": "2023-10-12",
-    "creators": [
+  "language": "eng",
+  "license": "MIT",
+  "title": "GLAM-Workbench/trove-government",
+  "related_identifiers": [
     {
-        "name": "Sherratt, Tim",
-        "orcid": "https://orcid.org/0000-0001-7956-4498"
+      "scheme": "url",
+      "identifier": "https://github.com/GLAM-Workbench/trove-government/tree/v1.0.0",
+      "relation": "isDerivedFrom",
+      "resource_type": "software"
+    },
+    {
+      "scheme": "url",
+      "identifier": "https://glam-workbench.net/trove-government-publications/",
+      "relation": "isDocumentedBy",
+      "resource_type": "publication-softwaredocumentation"
+    },
+    {
+      "scheme": "url",
+      "identifier": "https://glam-workbench.net/",
+      "relation": "isPartOf",
+      "resource_type": "other"
     }
-],
-    "access_right": "open",
-    "description": ""
-  }
-  
+  ],
+  "version": "v1.0.0",
+  "upload_type": "software",
+  "keywords": [
+    "digital humanities",
+    "Jupyter",
+    "GLAM Workbench"
+  ],
+  "publication_date": "2025-05-07",
+  "creators": [
+    {
+      "name": "Sherratt, Tim",
+      "orcid": "https://orcid.org/0000-0001-7956-4498"
+    }
+  ],
+  "access_right": "open",
+  "description": "<p>VERSION 1.0.0</p> <p>Resources generated or collected by the Australian Commonwealth Government are available in a number of different locations and formats across Trove. This repository contains tools and examples to work with digitised government publications available through Trove.</p> <p>For more information and documentation see the <a href=\"https://glam-workbench.net/trove-government\">Trove government</a> section of the <a href=\"https://glam-workbench.net\">GLAM Workbench</a>.</p> <h2 id=\"notebooks\">Notebooks</h2> <ul> <li>Harvest parliament press releases from Trove</li> <li>Harvest details of Commonwealth Parliamentary Papers digitised in Trove</li> </ul> <h2 id=\"associated-datasets\">Associated datasets</h2> <ul> <li><a href=\"https://github.com/GLAM-Workbench/trove-parliament-press-releases-refugees/\">trove-parliament-press-releases-refugees</a></li> <li><a href=\"https://github.com/GLAM-Workbench/trove-parliament-press-releases-covid/\">trove-parliament-press-releases-covid</a></li> <li><a href=\"https://github.com/GLAM-Workbench/trove-parliamentary-papers-data/\">trove-parliamentary-papers-data</a></li> </ul> <hr /> <p>Created by <a href=\"https://timsherratt.au\">Tim Sherratt</a> for the <a href=\"https://glam-workbench.net\">GLAM Workbench</a></p>"
+}

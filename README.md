@@ -1,5 +1,7 @@
 # trove-government
 
+VERSION 1.0.0
+
 Resources generated or collected by the Australian Commonwealth Government are available in a number of different locations and formats across Trove. This repository contains tools and examples to work with digitised government publications available through Trove.
 
 For more information and documentation see the [Trove government](https://glam-workbench.net/trove-government) section of the [GLAM Workbench](https://glam-workbench.net).
