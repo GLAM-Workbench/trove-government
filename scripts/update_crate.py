@@ -240,7 +240,7 @@ def get_default_gh_branch(url):
         response = requests.get(gh_repo_url)
         return response.json().get("default_branch")
 
-def add_files(crate, action, data_type, gw_url, data_repo, data_paths):
+def add_files(crate, action, data_type, gw_url, data_repo, local_path):
     """
     Add data files to the crate.
     Tries to extract some basic info about files (size, date) before adding them.
@@ -250,7 +250,7 @@ def add_files(crate, action, data_type, gw_url, data_repo, data_paths):
     # Loop through list of datafiles
     for df_data in action.get(data_type, []):
         datafile = df_data["url"]
-        local_path = action.get("local_path", ".")
+        # local_path = action.get("local_path", ".")
 
         # Check if file exists (or is a url)
         if (
@@ -360,7 +360,7 @@ def add_files(crate, action, data_type, gw_url, data_repo, data_paths):
     return file_entities
 
 
-def add_action(crate, notebook, input_files, output_files, query, index):
+def add_action(crate, notebook, input_files, output_files, query, index, local_path):
     """
     Links a notebook and associated datafiles through a CreateAction.
     """
@@ -376,7 +376,7 @@ def add_action(crate, notebook, input_files, output_files, query, index):
     # There's no dates (or no output files)
     except IndexError:
         # Use the date the notebook was last modified
-        last_date, _, _ = get_file_stats(notebook.id, ["."])
+        last_date, _, _ = get_file_stats(notebook.id, local_path)
 
     # Check to see if this action is already in the crate
     action_current = crate.get(action_id)
@@ -509,11 +509,12 @@ def add_notebook(crate, notebook, data_repo, data_path, gw_url):
 
         # Add a CreateAction that links the notebook run with the input and output files
         for index, action in enumerate(notebook_metadata.get("action", [])):
+            local_path = action.get("local_path", ".")
             if not data_repo or data_repo in action.get("result", [])[0]["url"]:
                 # print(action)
-                input_files = add_files(crate, action, "object", gw_url, data_repo, data_paths)
-                output_files = add_files(crate, action, "result", gw_url, data_repo, data_paths)
-                add_action(crate, nb_new, input_files, output_files, action.get("query", ""), index)
+                input_files = add_files(crate, action, "object", gw_url, data_repo, local_path)
+                output_files = add_files(crate, action, "result", gw_url, data_repo, local_path)
+                add_action(crate, nb_new, input_files, output_files, action.get("query", ""), index, local_path)
                 if data_repo:
                     if dataset_gw_page := action.get("mainEntityOfPage"):
                         crate.update_jsonld({"@id": "./", "mainEntityOfPage": id_ify(dataset_gw_page)})
